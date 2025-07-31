@@ -7,9 +7,9 @@
   Cada pasta 'ex' é um exercício separado. Dentro delas você vai encontrar:
 
   - Um arquivo '.html' para abrir no navegador
-  - Um '.js' com o código JavaScript do exercício
-  - Alguns têm também '.css' pra estilizar a página
-  - Alguns usam imagens
+  - Um arquivo '.js' com o código JavaScript do exercício
+  - Um arquivo '.css' pra estilizar a página
+  - Um pasta 'fotos' caso a página tiver foto
 
 ## Como usar
 
