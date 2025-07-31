@@ -9,11 +9,7 @@
   - Um arquivo '.html' para abrir no navegador
   - Um arquivo '.js' com o código JavaScript do exercício
   - Um arquivo '.css' pra estilizar a página
-<<<<<<< HEAD
   - Um pasta 'fotos' caso a página tenha fotos
-=======
-  - Um pasta 'fotos' caso a página tiver foto
->>>>>>> d6f974a89581a3fbd6dc5f619630bf8a3c211fd8
 
 ## Como usar
 
