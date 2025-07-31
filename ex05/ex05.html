@@ -3,20 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
     <title>media...</title>
 </head>
 <body>
-    <h1>Clique no Botão...</h1>
-    <button onclick="botao()">Aqui</button>
-    <p id="retornomedia"></p>
-    <script>
-        function botao(){
-        var nome = window.prompt('Olá, informe seu nome:')
-        var n1 = Number(window.prompt(nome + ', informe sua primeira nota:'))
-        var n2 = Number(window.prompt(nome + ', informe sua segunda nota:'))
-        var media = (n1 + n2)/2
-        window.document.getElementById("retornomedia").textContent = nome + ', sua média é: ' + media
-        }
-    </script>
+    <section>
+        <h1>Clique no Botão...</h1>
+        <button onclick="botao()">Aqui</button>
+        <p id="retornomedia"></p>
+    </section>
 </body>
 </html>
