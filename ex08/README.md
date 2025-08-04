@@ -1,28 +1,32 @@
-# Exercício 7
+# Exercício 8
 
-Este exercício cria uma página HTML com dois botões:
+Este exercício cria uma página HTML com um botão.  
+Quando o botão é clicado, a página pede:
 
-1. Um botão que conta quantas vezes foi clicado
-2. Um botão que zera o contador
-
-O número de cliques é mostrado direto na página (HTML).
+- O nome do aluno
+- A nota 1
+- A nota 2
+Depois, calcula a média das duas notas e mostra uma mensagem na tela com base no resultado.
 
 ## O que ele faz?
 
-Cada vez que você clica no primeiro botão, o número aumenta em +1
-- Quando clica no segundo botão, o contador volta para 0
-- O valor é exibido direto na tela, sem alertas nem console
+- Pede o nome do aluno e duas notas usando 'prompt()'
+- Calcula a média das notas
+- Mostra o resultado no HTML:
+- Se a média for maior ou igual a 7: aparece "Parabéns!" em verde
+- Se for menor que 7: aparece "Precisa estudar um pouco mais." em vermelho
 
 ## O que eu aprendi aqui?
 
-- Como usar variáveis que mudam de valor
-- Como controlar cliques com eventos ('onclick')
-- Como resetar valores com JavaScript
+- Como trabalhar com condições ('if' e 'else')
+- Como alterar cores do texto com HTML/CSS via JavaScript
+- Como calcular uma média
+- Como exibir resultados diferentes dependendo do valor
 
 ## Como testar
 
-1.  Abra a pasta 'ex07'
-2. Dê dois cliques no arquivo 'ex07.html' para abrir no navegador
-3. Clique no botão de contar cliques
-4. Veja o número aumentando na tela
-5. Clique no botão de zerar contador para voltar ao 0
+1.  Abra a pasta 'ex08'
+2. Dê dois cliques no arquivo 'ex08.html' para abrir no navegador
+3. Clique no botão da página
+4. Preencha o nome e as duas notas
+5. Veja o resultado e a mensagem aparecerem direto na tela, com a cor certa
