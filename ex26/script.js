@@ -8,7 +8,7 @@ function Calcular() {
 
     let divisores = []
 
-    for( let c = 0; c <= numero; c++){
+    for( let c = 1; c <= numero; c++){
         if(numero % c == 0) {
             divisores.push(c)
         }

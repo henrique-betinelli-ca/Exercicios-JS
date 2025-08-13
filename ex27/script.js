@@ -13,6 +13,8 @@ function Adicionar() {
 
     } else {
         if(!Repetido(numero)){
+            document.getElementById('Resultadosoma').innerHTML = ''
+            
             let lista = document.getElementById('Lista')
             let adicionar = document.createElement('li')
             adicionar.textContent = numero
@@ -25,14 +27,7 @@ function Adicionar() {
 }
 
 function Repetido(numero) {
-    if(numeros.indexOf(numero) == -1){
-        return false
-
-    } else {
-        alert('Sua lista ja pussui este numero!')
-        return true 
-
-    }
+    return numeros.find(n => n === numero) ? (alert('Sua lista já possui este número!'), true) : false;
 }
 
 function Somar() {
@@ -41,9 +36,7 @@ function Somar() {
 
     } else {
         let soma = 0
-        for(let c = 0; c < numeros.length; c++){
-            soma += numeros[c]
-        }
+        numeros.forEach(numero => soma += numero);
         
         document.getElementById('Resultadosoma').innerHTML = 'A soma de todos os numeros é: <strong>' + soma + '</strong>'
     }
