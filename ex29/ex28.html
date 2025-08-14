@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Array...</title>
+</head>
+<body>
+    <section>
+        <h1>Clique no botão...</h1>
+        <button onclick="botao()">Aqui</button>
+        <div id="EscolhaNumero" style="display:none" class="recursos">
+            <p>Adicionar a lista:</p>
+            <input type="number" id="Numero"> 
+            <p id="ResultadoAdicao"></p>
+            <button id="Adicionar" onclick="Adicionar()" >Adicionar</button>
+            <button id="Finalizar" onclick="Finalizar()" >Finalizar</button>
+        </div>
+        <div id="Operacoes" class="operacoes" style="display:none"> 
+            <div class="quantidadeNumeros">
+                <p>Ver quantidade de numeros na lista:</p>
+                <p id="ResultadoQuantidade"></p>
+                <button onclick="VerQuantidade()" >Ver</button>
+            </div>
+            <div class="Numeros">
+                <p>Ver a lista completa:</p>
+                <p id="ResultadoNumeros"></p>
+                <button onclick="VerLista()" >Ver</button>
+            </div>
+            <div class="OrdemNumeros">
+                <p>Ver lista em ordem:</p>
+                <p id="ResultadoOrdenar"></p>
+                <button onclick="VerOrdem()" >Ver</button>
+            </div>
+            <div class="SomarNumeros">
+                <p>Ver a soma dos itens da lista:</p>
+                <p id="ResultadoSoma"></p>
+                <button onclick="VerSoma()" >Ver</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html> 
