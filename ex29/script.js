@@ -18,6 +18,7 @@ function CalcularCompra() {
 
     if(c.value.trim() == '' || q.value.trim() == '' ){
         alert('Preencha todos os dados antes de calcular a compra.')
+        document.getElementById('Resultado').innerHTML = ''
 
     } else {
         c.value = ''
