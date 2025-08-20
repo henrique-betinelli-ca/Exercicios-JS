@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Lista para somar...</title>
+</head>
+<body>
+    <section>
+        <h1>Clique no botão...</h1>
+        <button onclick="botao()">Aqui</button>
+        <div id="EscolhaNumero" style="display:none" class="recursos">
+            <p>Informe um numero:</p>
+            <input type="number" id="Numero"> <br> <br>
+            <button id="Adicionar" onclick="Adicionar()" >Adicionar</button>
+            <button id="Somar" onclick="Somar()" >Somar</button>
+        </div>
+        <div>
+            <ul id="Lista"></ul>
+            <p id="Resultadosoma"></p>
+        </div>
+    </section>
+</body>
+</html> 
