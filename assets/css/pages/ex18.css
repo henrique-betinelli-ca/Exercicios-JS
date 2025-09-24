@@ -1,0 +1,10 @@
+@import '../global/global.css';
+
+div {
+    text-align: center;
+    padding: 8px; 
+}
+
+.impar{
+    color: rgb(113, 113, 113);
+}

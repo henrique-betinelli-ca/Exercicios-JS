@@ -1,0 +1,13 @@
+@import '../global/global.css';
+
+div {
+    text-align: center;
+    padding: 8px; 
+}
+
+.tabelaPrecos {
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
