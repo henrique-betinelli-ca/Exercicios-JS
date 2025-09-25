@@ -1,1 +1,6 @@
 @import '../global/global.css';
+
+div {
+  text-align: initial;
+  padding: initial;
+}
