@@ -1,0 +1,31 @@
+@import '../global/global.css';
+
+.semaforo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.semaforoVermelho{
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin: 5px;
+    background-color: rgba(223, 204, 204, 1);
+}
+
+.semaforoAmarelo{
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin: 5px;
+    background-color:rgba(234, 233, 219, 1);
+}
+
+.semaforoVerde{
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+    margin: 5px;
+    background-color: rgba(196, 217, 196, 1);
+}
