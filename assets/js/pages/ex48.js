@@ -2,7 +2,7 @@ const nomePokemonInicio = document.getElementById("nomePokemonInicio")
 const resultado = document.getElementById("resultado")
 
 async function buscarPokemon(){
-    resultado.innerHTML = ""
+    resultado.innerHTML = 'Carregando...'
     const pokemon = nomePokemonInicio.value.trim()
     nomePokemonInicio.value = ''
 
@@ -22,7 +22,7 @@ async function buscarPokemon(){
         `
     } catch (erro) {
         console.log(erro)
-        resultado.innerHTML = `<p>${erro}</p>`
+        resultado.innerHTML = `<p>Desculpe, não foi possivel encontrar um Pokémon com esse nome. <br><strong>Tente novamente!</strong></p>`
     }
 }
 

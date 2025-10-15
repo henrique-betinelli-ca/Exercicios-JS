@@ -14,7 +14,10 @@ async function carregarEstados() {
             })
             mensagemRetorno.textContent = 'Estados carregados com sucesso!'
         })
-        .catch(erro => console.log(erro), mensagemRetorno.textContent = 'Erro ao carregar estados.')
+        .catch((erro) => {
+            console.log(erro)
+            mensagemRetorno.textContent = 'Erro ao carregar estados.'
+        })
 }
 
 document.getElementById("botaoCarregarEstados").addEventListener("click", carregarEstados)

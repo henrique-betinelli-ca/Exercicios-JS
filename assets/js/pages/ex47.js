@@ -12,7 +12,10 @@ async function buscarUsuarioAleatorio(){
             <img src="${usuario.picture.large}" alt="Usuário Aleatório">
             `
         })
-        .catch(erro => console.log(erro))
+        .catch((erro) => {
+            console.log(erro)
+            resultado.innerHTML = `<p>Desculpe, não conseguimos buscar os usuários. <br><strong>Tente novamente mais tarde!</strong></p>`
+        })
 }
 
 document.getElementById("botaoBuscarUsuarioAleatorio").addEventListener("click", buscarUsuarioAleatorio)

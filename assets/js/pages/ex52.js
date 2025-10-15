@@ -15,7 +15,7 @@ async function pesquisarNome() {
     mensagemRetorno.textContent = 'Buscando...'
     corpoTabela.innerHTML = ''
 
-    await fetch(`https://servicodados.ibge.gov.br/api/v2/censos/nomes/${nome}`)
+    await fetch(`https://servicodados.ibge.gov.br/api/v2/censos/nomesss/${nome}`)
         .then(resp => resp.json())
         .then((dados) => {
             if (dados.length === 0) {
@@ -35,7 +35,10 @@ async function pesquisarNome() {
             tabela.style.display = 'table'
             mensagemRetorno.textContent = ''
         })
-        .catch(erro => console.log(erro))
+        .catch((erro) => {
+            console.log(erro)
+            mensagem.innerHTML = `<p>Desculpe, não conseguimos buscar os usuários. <br><strong>Tente novamente mais tarde!</strong></p>`
+        })
 }
 
 document.getElementById("botaoPesquisarNome").addEventListener("click", pesquisarNome)
