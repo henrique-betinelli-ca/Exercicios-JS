@@ -21,10 +21,7 @@ async function aguardarTempo() {
             resultado.textContent = resposta
             document.getElementById("tempoMilissegundos").value = ""   
         })
-        .catch((erro) => {
-            console.log(erro)
-            resultado.textContent = erro
-        })
+        .catch(resultado.textContent = erro)
 }
 
 document.getElementById("botaoEsperar").addEventListener("click", aguardarTempo)

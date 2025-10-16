@@ -23,10 +23,7 @@ function buscarRequisicoes(){
             const nomes = users.map((u) => u.name)
             mensagemRetorno.innerHTML = '<strong>Nomes:</strong> ' + nomes.join(', ')
         })
-        .catch(erro => {
-            console.error(erro)
-            mensagemRetorno.textContent = 'Ocorreu um erro ao buscar os usuários.'
-        })
+        .catch(mensagemRetorno.textContent = 'Ocorreu um erro ao buscar os usuários.')
 }
 
 document.getElementById("botaoBuscarNomes").addEventListener("click", buscarRequisicoes)

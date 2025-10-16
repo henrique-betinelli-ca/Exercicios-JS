@@ -19,7 +19,6 @@ async function pesquisarFeriados() {
     await fetch(`https://brasilapi.com.br/api/feriados/v1/${ano}`)
         .then(resp => resp.json())
         .then((dados) => {
-            console.log(dados)
             if (dados.length === 0) {
                 mensagem.textContent = `O ano "${ano}" não foi encontrado.`;
                 return;
@@ -35,10 +34,7 @@ async function pesquisarFeriados() {
             tabela.style.display = 'table'
             mensagemRetorno.textContent = ''
         })
-        .catch((erro) => {
-            console.log(erro)
-            mensagemRetorno.textContent = 'Não foi possivel encontrar esses dados.'
-        })
+        .catch(mensagemRetorno.textContent = 'Não foi possivel encontrar esses dados.')
 }
 
 document.getElementById("botaoPesquisarFeriados").addEventListener("click", pesquisarFeriados)

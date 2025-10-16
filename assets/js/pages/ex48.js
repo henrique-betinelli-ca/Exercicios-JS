@@ -20,8 +20,7 @@ async function buscarPokemon(){
             <img src="${data.sprites.other["official-artwork"].front_default}" alt="${data.name}">
             <p><strong>Tipo:</strong> ${data.types.map(t => t.type.name).join(", ")}</p>
         `
-    } catch (erro) {
-        console.log(erro)
+    } catch {
         resultado.innerHTML = `<p>Desculpe, não foi possivel encontrar um Pokémon com esse nome. <br><strong>Tente novamente!</strong></p>`
     }
 }

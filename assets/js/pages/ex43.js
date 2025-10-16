@@ -13,10 +13,7 @@ async function buscarDadosCliente() {
 
     dadosCliente()
         .then(dados => mensagemRetorno.textContent = dados)
-        .catch((erro) => {
-            mensagemRetorno.textContent = 'Erro ao Buscar dados.'
-            console.log(erro)
-        })
+        .catch(mensagemRetorno.textContent = 'Erro ao Buscar dados.')
 }
 
 document.getElementById("botaoBuscarDados").addEventListener("click", buscarDadosCliente)

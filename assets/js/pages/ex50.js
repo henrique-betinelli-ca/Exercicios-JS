@@ -14,10 +14,7 @@ async function buscarCachorro() {
             retornoCachorro.innerHTML = `<img src="${cachorro.message}" alt="Foto Cachorro"></img>`
             botaoWoof.textContent = 'Woof!'
         })
-        .catch((erro) => {
-            console.log(erro)
-            retornoCachorro.innerHTML = `<p>Desculpe, não conseguimos buscar os dados. <br><strong>Tente novamente mais tarde!</strong></p>`
-        })
+        .catch(retornoCachorro.innerHTML = `<p>Desculpe, não conseguimos buscar os dados. <br><strong>Tente novamente mais tarde!</strong></p>`)
 }
 
 document.getElementById("botaoBuscasCachorro").addEventListener("click", buscarCachorro)

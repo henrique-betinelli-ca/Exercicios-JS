@@ -35,10 +35,7 @@ async function pesquisarNome() {
             tabela.style.display = 'table'
             mensagemRetorno.textContent = ''
         })
-        .catch((erro) => {
-            console.log(erro)
-            mensagem.innerHTML = `<p>Desculpe, não conseguimos buscar os usuários. <br><strong>Tente novamente mais tarde!</strong></p>`
-        })
+        .catch(mensagem.innerHTML = `<p>Desculpe, não conseguimos buscar os usuários. <br><strong>Tente novamente mais tarde!</strong></p>`)
 }
 
 document.getElementById("botaoPesquisarNome").addEventListener("click", pesquisarNome)
